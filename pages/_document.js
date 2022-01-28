@@ -1,14 +1,18 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 
+const supportedLangs = ['es', 'mk', 'pl', 'ro', 'ru', 'sr', 'tr'];
 export default class Document extends NextDocument {
   static async getInitialProps(ctx) {
     const initialProps = await NextDocument.getInitialProps(ctx);
-    return { ...initialProps };
+    const { pathname } = ctx;
+    const locale = pathname.split('/')[1];
+    const lang = supportedLangs.includes(locale) ? locale : 'en-US';
+    return { ...initialProps, lang };
   }
 
   render() {
     return (
-      <Html lang='en-US'>
+      <Html lang={this.props.lang}>
         <Head>
           <meta name='theme-color' content='#000000' />
           <meta name='application-name' content={process.env.siteName} />

@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import DownloadRow from '../../components/DownloadRow';
 import { Row, Col } from '../../components/Grid';
 import { RowThumbnail } from '../../components/RowThumbnail';
@@ -14,9 +13,6 @@ const translations = {
 export default function Page() {
   return (
     <>
-      <Head>
-        <html lang='tr' />
-      </Head>
       <DownloadRow lazy={false} translations={translations} />
       <Row>
         <Col>

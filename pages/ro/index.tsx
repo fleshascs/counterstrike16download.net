@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import DownloadRow from '../../components/DownloadRow';
 import { Row, Col } from '../../components/Grid';
 import { RowThumbnail } from '../../components/RowThumbnail';
@@ -8,9 +7,6 @@ import { ratingSchema } from '../../components/utils';
 export default function Page() {
   return (
     <>
-      <Head>
-        <html lang='ro' />
-      </Head>
       <DownloadRow lazy={false} />
       <Row>
         <Col>
