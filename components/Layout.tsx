@@ -1,6 +1,5 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
-import Image from './Image';
 
 type Props = {
   children: React.ReactNode;
