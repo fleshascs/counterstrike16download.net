@@ -248,7 +248,7 @@ export default function Page() {
           />
         </Col>
         <Col>
-          <h4 className='text-2xl text-amber-300'>Минимални системски барања за игра CS 1.6.</h4>
+          <h3 className='text-2xl text-amber-300'>Минимални системски барања за игра CS 1.6.</h3>
           <small>(for Windows 95, 98, 2000, XP)</small>
           <ul className='list-disc list-inside'>
             <li> CPU with a clock speed of 1200 MHz or higher.</li>
@@ -272,7 +272,7 @@ export default function Page() {
           />
         </Col>
         <Col>
-          <h4 className='text-2xl text-amber-300'>Препорачани системски барања за игра CS 1.6.</h4>
+          <h3 className='text-2xl text-amber-300'>Препорачани системски барања за игра CS 1.6.</h3>
           <small>(for Windows 95, 98, 2000, XP, Vista, 7, 8, 8.1 or 10)</small>
           <ul className='list-disc list-inside'>
             <li> CPU with a clock speed of 1600 MHz or higher.</li>
