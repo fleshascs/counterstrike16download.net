@@ -13,7 +13,7 @@ export default class Document extends NextDocument {
           <meta name='theme-color' content='#000000' />
           <meta name='application-name' content={process.env.siteName} />
         </Head>
-        <body className='antialiased text-gray-400'>
+        <body className='antialiased text-white'>
           <Main />
           <NextScript />
         </body>

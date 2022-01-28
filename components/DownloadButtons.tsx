@@ -1,10 +1,25 @@
 import clsx from 'clsx';
 import Image from './Image';
-import styles from './downloadButtons.module.css';
-interface ButtonsProps {
+
+export interface ButtonsProps {
   className?: string;
+  translations?: {
+    download: string;
+    directDownload: string;
+    torrentDownload: string;
+  };
+  loading?: 'eager' | 'lazy' | undefined;
 }
-const Buttons = ({ className }: ButtonsProps) => {
+const Buttons = (props: ButtonsProps) => {
+  const {
+    loading,
+    className,
+    translations = {
+      download: 'DOWNLOAD',
+      directDownload: 'Direct link',
+      torrentDownload: 'Torrent'
+    }
+  } = props;
   function log() {
     fetch('https://fleshas.lt/php/api/csdownloads/').catch(() => {
       //...
@@ -12,14 +27,21 @@ const Buttons = ({ className }: ButtonsProps) => {
   }
 
   return (
-    <div className={clsx(styles.dbcontainer, className, 'py-3')}>
+    <div
+      className={clsx(
+        className,
+        'inline-flex justify-center p-2 rounded-full h-min bg-[#291f1fe6]'
+      )}
+    >
       <a
         href='https://fleshas.lt/cs-download/Counter-Strike1.6.exe'
         onClick={log}
-        className={clsx(styles.downloadbutton, 'mr-1')}
+        className='py-1 pl-4 pr-6 mr-1 rounded-full flex bg-red-900'
       >
         <Image
-          className={styles.dbicon}
+          loading={loading}
+          className='pr-[6px]'
+          imgClassName='h-[40px]'
           width='40'
           height='40'
           src={require('../images/csct.png?resize&size=40')}
@@ -29,17 +51,19 @@ const Buttons = ({ className }: ButtonsProps) => {
         />
 
         <div>
-          <div className={styles.dbtop}>DOWNLOAD</div>
-          <div className={styles.dbbottom}>Direct link</div>
+          <div className='text-white font-bold text-sm'>{translations.download}</div>
+          <div className='font-bold text-sm text-yellow-300'>{translations.directDownload}</div>
         </div>
       </a>
       <a
         href='https://fleshas.lt/cs-download/Counter-Strike 1.6.exe.torrent'
-        className={clsx(styles.downloadbutton, 'mr-1')}
+        className='py-1 pl-4 pr-6 rounded-full flex bg-red-900'
         onClick={log}
       >
         <Image
-          className={styles.dbicon}
+          loading={loading}
+          className='pr-[6px]'
+          imgClassName='h-[40px]'
           width='40'
           height='40'
           src={require('../images/csct.png?resize&size=40')}
@@ -48,8 +72,8 @@ const Buttons = ({ className }: ButtonsProps) => {
           title='Counter-Strike 1.6 Torrent'
         />
         <div>
-          <div className={styles.dbtop}>DOWNLOAD</div>
-          <div className={styles.dbbottom}>Torrent</div>
+          <div className='text-white font-bold text-sm'>{translations.download}</div>
+          <div className='font-bold text-sm text-yellow-300'>{translations.torrentDownload}</div>
         </div>
       </a>
     </div>
