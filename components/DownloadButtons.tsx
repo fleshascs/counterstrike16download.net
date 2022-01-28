@@ -41,9 +41,8 @@ const Buttons = (props: ButtonsProps) => {
         <Image
           loading={loading}
           className='pr-[6px]'
-          imgClassName='h-[40px]'
           width='40'
-          height='40'
+          height='47'
           src={require('../images/csct.png?resize&size=40')}
           webp={require('../images/csct.png?resize&size=40&format=webp')}
           alt='CS 1.6 Download'
@@ -63,9 +62,8 @@ const Buttons = (props: ButtonsProps) => {
         <Image
           loading={loading}
           className='pr-[6px]'
-          imgClassName='h-[40px]'
           width='40'
-          height='40'
+          height='47'
           src={require('../images/csct.png?resize&size=40')}
           webp={require('../images/csct.png?resize&size=40&format=webp')}
           alt='CS 1.6 Download Torrent'
