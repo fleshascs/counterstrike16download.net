@@ -8,7 +8,7 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <Html lang='en' className='[--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem]'>
+      <Html lang='en-US'>
         <Head>
           <meta name='theme-color' content='#000000' />
           <meta name='application-name' content={process.env.siteName} />
