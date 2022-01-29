@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://counterstrike16download.net
+Host: https://counterstrike16download.net
 
 # Sitemaps
-Sitemap: http://counterstrike16download.net/sitemap.xml
+Sitemap: https://counterstrike16download.net/sitemap.xml
