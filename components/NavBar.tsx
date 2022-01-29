@@ -46,7 +46,7 @@ export default function NavBar() {
                 imgClassName='h-[50px] w-[100px] max-w-none'
                 width='100'
                 height='50'
-                src={require('../images/game/AK-47.png')}
+                src={require('../images/game/AK-47.png?resize&size=100')}
                 webp={require('../images/game/AK-47.png?resize&size=100&format=webp')}
                 alt='counter strike game'
               />
