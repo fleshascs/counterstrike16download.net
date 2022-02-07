@@ -27,7 +27,7 @@ export default function Page() {
             <tbody>
               <tr>
                 <td className='border p-2 border-zinc-600'>Version</td>
-                <td className='border p-2 border-zinc-600'>Counter strike 1.6</td>
+                <td className='border p-2 border-zinc-600'>Counter strike 1.6 Global Offensive</td>
               </tr>
               <tr>
                 <td className='border p-2 border-zinc-600'>Package size</td>

@@ -13,6 +13,14 @@ const Footer = () => {
               <span itemProp='name'>{process.env.siteName}</span>
             </a>
           </div>
+          <a target='_blank' rel='noopener' href='https://www.hey.lt/details.php?id=cs16downloads'>
+            <img
+              width='88'
+              height='31'
+              src='https://www.hey.lt/count.php?id=cs16downloads'
+              alt='Hey.lt - Nemokamas lankytojų skaitliukas'
+            />
+          </a>
         </div>
       </div>
     </footer>
