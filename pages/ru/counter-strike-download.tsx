@@ -1,3 +1,4 @@
+import AdSense from 'react-adsense';
 import DownloadRow from '../../components/DownloadRow';
 import { Row, Col } from '../../components/Grid';
 import { RowThumbnail } from '../../components/RowThumbnail';
@@ -13,6 +14,14 @@ const translations = {
 export default function Page() {
   return (
     <>
+      <AdSense.Google
+        client='ca-pub-3219722052726085'
+        slot='4013757856'
+        style={{ display: 'block' }}
+        format='auto'
+        responsive='true'
+        layoutKey='-gw-1+2a-9x+5c'
+      />
       <DownloadRow lazy={false} translations={translations} />
       <Row>
         <Col>

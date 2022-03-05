@@ -1,3 +1,4 @@
+import AdSense from 'react-adsense';
 import { RowThumbnail } from '../components/RowThumbnail';
 import DownloadRow from '../components/DownloadRow';
 import { Row, Col } from '../components/Grid';
@@ -7,6 +8,14 @@ import { ratingSchema } from '../components/utils';
 export default function Page() {
   return (
     <>
+      <AdSense.Google
+        client='ca-pub-3219722052726085'
+        slot='4013757856'
+        style={{ display: 'block' }}
+        format='auto'
+        responsive='true'
+        layoutKey='-gw-1+2a-9x+5c'
+      />
       <DownloadRow lazy={false} />
       <Tag># Counter-Strike 1.6 CSGO Mod</Tag>
       <Row>
