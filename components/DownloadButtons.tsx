@@ -45,7 +45,8 @@ const Buttons = (props: ButtonsProps) => {
       )}
     >
       <a
-        href='https://fleshas.lt/cs-download/Counter-Strike1.6.exe'
+        // href='https://fleshas.lt/cs-download/Counter-Strike1.6.exe'
+        href='http://dl.fleshas.lt/cs/cstrike.exe'
         ref={directBtn}
         className='py-1 pl-4 pr-6 mr-1 rounded-full flex bg-red-900'
       >
@@ -66,7 +67,8 @@ const Buttons = (props: ButtonsProps) => {
         </div>
       </a>
       <a
-        href='https://fleshas.lt/cs-download/Counter-Strike 1.6.exe.torrent'
+        // href='https://fleshas.lt/cs-download/Counter-Strike 1.6.exe.torrent'
+        href='http://dl.fleshas.lt/cs/cstrike.exe.torrent'
         className='py-1 pl-4 pr-6 rounded-full flex bg-red-900'
         ref={torrentBtn}
       >
