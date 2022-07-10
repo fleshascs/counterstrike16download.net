@@ -27,6 +27,11 @@ export default function Page() {
         </Col>
         <Col>
           <p className='text-justify pb-4'>
+            This is full Counter strike 1.6 client, this CS 1.6 game client don’t have any
+            adverstiments. This Counter-Strike 1.6 client is protected from modification of the game
+            files (Slowhack – CS 1.6 game files changes, without the player’s consent).
+          </p>
+          <p className='text-justify pb-4'>
             Discovered in 2003 as <span className='text-amber-300'>Counter-Strike 1.6</span> became
             one of the best known games ever made. Our original CS 1.6 install ensures best gaming
             experience. This setup includes High FPS config and newest build version. The main game
