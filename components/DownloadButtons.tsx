@@ -51,6 +51,7 @@ const Buttons = (props: ButtonsProps) => {
         href='/csdownload'
         ref={directBtn}
         className='py-1 pl-4 pr-6 mr-1 rounded-full flex bg-red-900'
+        target='_blank'
       >
         <Image
           loading={loading}
@@ -75,6 +76,7 @@ const Buttons = (props: ButtonsProps) => {
         href='/csdownload-torrent'
         className='py-1 pl-4 pr-6 rounded-full flex bg-red-900'
         ref={torrentBtn}
+        target='_blank'
       >
         <Image
           loading={loading}
