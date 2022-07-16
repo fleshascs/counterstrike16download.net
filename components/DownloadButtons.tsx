@@ -32,8 +32,8 @@ const Buttons = (props: ButtonsProps) => {
       fetch('https://fleshas.lt/php/api/csdownloads/');
     }
     return () => {
-      directBtn.current.removeEventListener('click', log);
-      torrentBtn.current.removeEventListener('click', log);
+      directBtn.current?.removeEventListener('click', log);
+      torrentBtn.current?.removeEventListener('click', log);
     };
   }, []);
 
@@ -45,9 +45,6 @@ const Buttons = (props: ButtonsProps) => {
       )}
     >
       <a
-        // href='https://fleshas.lt/cs-download/Counter-Strike1.6.exe'
-        // href='https://dlfleshas.b-cdn.net/cs/cstrike.exe'
-        // href='https://cdn.cs-boost.lt/cs/cstrike.exe'
         href='/csdownload'
         ref={directBtn}
         className='py-1 pl-4 pr-6 mr-1 rounded-full flex bg-red-900'
@@ -70,9 +67,6 @@ const Buttons = (props: ButtonsProps) => {
         </div>
       </a>
       <a
-        // href='https://fleshas.lt/cs-download/Counter-Strike 1.6.exe.torrent'
-        // href='https://dlfleshas.b-cdn.net/cs/cstrike.exe.torrent'
-        // href='https://cdn.cs-boost.lt/cs/cstrike.exe.torrent'
         href='/csdownload-torrent'
         className='py-1 pl-4 pr-6 rounded-full flex bg-red-900'
         ref={torrentBtn}

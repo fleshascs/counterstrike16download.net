@@ -31,13 +31,21 @@ const navigation = [
   {
     name: 'CS 1.6 for Windows 10',
     href: '/cs-1.6-windows-10'
+  },
+  {
+    name: 'CS 1.6 Romania',
+    href: '/ro'
+  },
+  {
+    name: 'CS 1.6 indir',
+    href: '/tr'
   }
 ];
 export default function NavBar() {
   const router = useRouter();
   return (
     <nav className='bg-red-900 overflow-x-auto sm:overflow-visible'>
-      <div className='max-w-7xl px-2 sm:px-6 lg:px-8'>
+      <div className=' px-2 sm:px-6 lg:px-8'>
         <div className='relative flex items-center justify-between py-5'>
           <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
             <div className='sm:flex-shrink-0 flex items-center'>

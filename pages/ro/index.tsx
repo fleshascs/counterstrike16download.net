@@ -18,6 +18,11 @@ export default function Page() {
         </Col>
         <Col>
           <p className='text-justify pb-4'>
+            This is full Counter strike 1.6 client, this CS 1.6 game client don’t have any
+            adverstiments. This Counter-Strike 1.6 client is protected from modification of the game
+            files (Slowhack – CS 1.6 game files changes, without the player’s consent).
+          </p>
+          <p className='text-justify pb-4'>
             Descoperit în 2003 ca Counter-Strike 1.6, a devenit unul dintre cele mai cunoscute
             jocuri realizate vreodată. Instalarea noastră CS 1.6 asigură cea mai bună experiență de
             joc. Această configurare include configurația High FPS și cea mai nouă versiune de
@@ -427,7 +432,7 @@ Page.layoutProps = {
   meta: {
     title: 'Download Counter-Strike 1.6 - CS 1.6 Original Full Version',
     description:
-      'Descoperit în 2003 ca Counter-Strike 1.6, a devenit unul dintre cele mai cunoscute jocuri realizate vreodată. Instalarea noastră CS 1.6 asigură cea mai bună experiență de joc. Această configurare include configurația High FPS și cea mai nouă versiune de construcție. Ideea principală a jocului ne aduce la două echipe de luptă unul împotriva celuilalt (contraterorişti şi terorişti), ambele echipe au propriile lor arme unice, include puşti, cuţite şi grenade.'
+      'This is full Counter strike 1.6 client, this CS 1.6 game client don’t have any adverstiments. This Counter-Strike 1.6 client is protected from modification of the game files (Slowhack – CS 1.6 game files changes, without the player’s consent).'
   },
   schema: ratingSchema({ ratingValue: '4.9', ratingCount: '986' })
 };
