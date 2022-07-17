@@ -217,7 +217,7 @@ Page.layoutProps = {
     description:
       'This is full Counter strike 1.6 client, this CS 1.6 game client don’t have any adverstiments. This Counter-Strike 1.6 client is protected from modification of the game files (Slowhack – CS 1.6 game files changes, without the player’s consent).'
   },
-  schema: {
+  schema: JSON.stringify({
     '@context': 'http://schema.org',
     '@type': 'VideoGame',
     operatingSystem: 'Windows',
@@ -235,5 +235,5 @@ Page.layoutProps = {
     sameAs: 'https://tr.wikipedia.org/wiki/Counter-Strike',
     aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', reviewCount: '2101243' },
     author: { '@type': 'Organization', name: 'Valve', url: 'http://www.valvesoftware.com/' }
-  }
+  })
 };
